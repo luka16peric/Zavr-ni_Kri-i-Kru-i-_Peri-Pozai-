@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Križić Kružić</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Križić Kružić</h1>
+        
+        <div class="player-inputs">
+            <input type="text" id="playerX" placeholder="Ime Igrača X" required>
+            <input type="text" id="playerO" placeholder="Ime Igrača O" required>
+        </div>
+
+        <h2 id="statusMessage">Unesite imena da biste započeli!</h2>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button id="resetBtn">Nova igra</button>
+
+        <div class="leaderboard">
+            <h3>Najbolji igrači 🏆</h3>
+            <ul id="scoreList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
